@@ -1,0 +1,18 @@
+---
+openapi: 3.0.2
+info:
+  title: test
+  version: 1.0.0
+paths:
+  /beep-boop:
+    put:
+      requestBody:
+        content:
+          application/vnd.boop+json:
+            schema:
+              format: date-time
+              type: string
+        required: true
+      responses:
+        "200":
+          description: all good son
